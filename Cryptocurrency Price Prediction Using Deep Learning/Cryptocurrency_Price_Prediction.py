@@ -1,5 +1,5 @@
 import pandas as pd
-import time
+import time, sys
 from Manipulate_Data import plotData
 from Build_LSTM import buildLSTMData
 
@@ -46,7 +46,8 @@ def predictCurrencyPrices():
     while True:
         for num, curr in dictCurrencies.items():
             print(num + " " + curr[0])
-        selCurr = input("Enter the currency number for which you want to predict the price: ")
+        selCurr = input("Enter the currency number for which you want to predict the price (Press 0 to exit): ")
+        if int(selCurr) == 0: sys.exit()
         if int(selCurr) > 0 and int(selCurr) < 6:
             print("\nPredicting price for " + dictCurrencies[selCurr][0])
             currName = dictCurrencies[selCurr][1]

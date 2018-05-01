@@ -15,7 +15,7 @@ Instructions to run the program:
 Enter the following command in command prompt:
 python Cryptocurrency_Price_Prediction.py
 
-Note: Test graphs and models for ethereum have been included along with the code. The project currently works for 5 currencies and can be extended with certain minor code changes.
+Note: Test graphs and models for ethereum have been included along with the code. The project currently works for 5 currencies and can be extended with certain minor code changes. The currencies are fetched from coinmarketcap.com website to ensure live rates.
 
 Major functions used:
 Cryptocurrency_Price_Prediction.py
